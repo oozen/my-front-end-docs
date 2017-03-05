@@ -1,0 +1,66 @@
+GIT USER GUIDE
+
+Setting up git
+
+	git config --global user.name "ozgrozn"
+	git config --global user.email "ozgrozn79@gmail.com"
+
+* Create a repository on github
+
+* Clone repository to your own pc
+
+	git clone https://github.com/oozen/angular1.5-user-endpoint.git
+
+* Setup desktop repository. Git is going to watch for them
+
+	cd /d/PROJECTS/DEVELOPMENT/_git/angular1.5-user-endpoint
+	git init
+
+* Status
+
+	git status
+	clear : clears screen
+COMMAND init
+npm init  
+package.json dosyasini ilgili folder’da olusturur
+
+COMMAND ls 
+ lists files in the current folder
+
+	ls -la  with hidden stuff
+
+
+NOT : GULP ILE ILGILI
+npm install gulp 
+komutuyla gulp install edilir sonrasinda
+
+npm install gulp –save-dev  
+komutuyla package.json dosyasina devDependencies nodu eklenmis olur. Böylece node_modules klasörü diger library’ler de gulpla src klasörüne tisindiktan sonra silinebilir.
+
+gulp <task-name>  taski çalistirir.
+
+
+COMMAND fetch
+
+git fetch          repodaki degisiklikleri locale indirir 
+
+.gitignore
+Comitte göz ardi edilecek dosya ve klasörleri belirleriz.Her satira bir isim
+
+touch .gitignore 
+seklinde yaratilir
+
+ÖRNEK:
+node_modules/*
+compilerConfig.json
+
+
+COMMIT AND PUSH
+
+git  checkout -b  <branch>
+git add -all        (noktalisi da var. tüm degisiklikleri ve yeni eklenen dosyalari commitleme üzere ekler)
+git commit -m “Commit message…”
+git push -u origin <branch>     Sifre soracaktir.
+
+
+

@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>RequireJS Example</title>
+	<meta charset="utf-8" />
+    <style>
+        body{
+            padding:50px 100px;
+            font-family: Tahoma,sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h3>Using require() vs. define()</h3>
+    <p>
+        Earlier I mentioned that we can use both require() and define() to load dependencies.<br />
+        Understanding the difference between those two functions is essential to managing dependencies.<br />
+        The require() function is used to run immediate functionalities, while define() is used to define modules for use in multiple locations.<br />
+        In our example we need to run the purchaseProduct() function immediately. So, require() was used inside main.js.<br />
+        However, the other files are reusable modules and therefore use define().
+    </p>
+    <script data-main="js/example1/main" src="js/require.js"></script>
+</body>
+</html>
